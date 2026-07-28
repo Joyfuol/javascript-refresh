@@ -189,5 +189,31 @@ array[array.length - 1]
 
 ---
 
+## Array Destructuring
 
+- Uses square brackets `[]`
+- Extracts values based on their position (index)
+- You can skip items using commas
+- Useful when working with arrays
+
+Example:
+
+const [first, second] = fruits;
+
+---
+
+## Object Destructuring
+
+- Uses curly braces `{}`
+- Extracts values based on property names
+- Property names must exist in the object
+- Properties can be renamed
+
+Example:
+
+const { name, age } = user;
+
+Rename Example:
+
+const { name: fullName } = user;
 

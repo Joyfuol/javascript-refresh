@@ -153,3 +153,5 @@ const [ , , , skill4, , skill6] = skills;
 
 console.log("Fourth Skill:", skill4);
 console.log("Sixth Skill:", skill6);
+
+

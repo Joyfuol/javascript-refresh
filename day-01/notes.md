@@ -217,3 +217,69 @@ Rename Example:
 
 const { name: fullName } = user;
 
+
+## Spread Operator (...)
+
+The spread operator (`...`) expands the elements of an array or object into a new array or object.
+
+### Common Uses
+
+- Copy an array
+- Add items to the beginning
+- Add items to the end
+- Merge arrays
+- Create new arrays without changing the original array
+
+### Examples
+
+```javascript
+const numbers = [2, 3, 4];
+
+const newNumbers = [1, ...numbers, 5];
+// [1, 2, 3, 4, 5]
+
+## Rest Operator (...)
+
+The Rest Operator (`...`) collects the remaining elements of an array or object into a new array or object.
+
+### Array Example
+
+```javascript
+const fruits = ["Apple", "Orange", "Banana"];
+
+const [firstFruit, ...otherFruits] = fruits;
+
+// firstFruit = "Apple"
+// otherFruits = ["Orange", "Banana"]
+```
+
+### Object Example
+
+```javascript
+const user = {
+  name: "Maryam",
+  age: 30,
+  country: "Nigeria"
+};
+
+const { name, ...details } = user;
+
+// name = "Maryam"
+// details = { age: 30, country: "Nigeria" }
+```
+
+### Rules
+
+- Uses the same `...` syntax as the spread operator.
+- Collects the remaining elements or properties.
+- In array destructuring, the rest element must be the last one.
+
+### Spread vs Rest
+
+Spread:
+- Expands values.
+- Example: `[...array]`
+
+Rest:
+- Collects remaining values.
+- Example: `const [first, ...others] = array`

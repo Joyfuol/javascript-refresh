@@ -202,3 +202,28 @@ numbers.forEach(number => console.log(number));
 - `map()` does not mutate the original array.
 - Arrays of objects are commonly transformed using `map()`.
 - `map()` is heavily used in React for rendering lists.
+
+## filter()
+
+- filter() creates a new array.
+- It returns only items that match a condition.
+- It does not modify the original array.
+
+Example:
+
+const passedStudents = students.filter(student => student.score >= 50);
+
+## Method Chaining
+
+Method chaining means calling multiple array methods one after another.
+
+Example:
+
+const passedNames = students
+  .filter(student => student.score >= 50)
+  .map(student => student.name);
+
+Common combinations:
+- filter() + map()
+- map() + filter()
+- filter() + map() + reduce()

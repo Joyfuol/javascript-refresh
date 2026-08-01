@@ -1,14 +1,75 @@
-// What is map(): map() is an array method that creates a new array by transforming each item in the original array.
+// // What is map(): map() is an array method that creates a new array by transforming each item in the original array.
 
-// Example 1:
+// // Example 1:
 
-// const numbers = [1, 2, 3, 4];
+// // const numbers = [1, 2, 3, 4];
 
-// const doubledNumbers = numbers.map(number => number * 2);
+// // const doubledNumbers = numbers.map(number => number * 2);
 
-// console.log(doubledNumbers);
+// // console.log(doubledNumbers);
 
-// Example 2:
+// // Example 2:
+
+// // const fruits = [
+// //     "Apple",
+// //     "Orange",
+// //     "Banana"
+// // ];
+
+// // const upperCaseFruits = fruits.map(fruit => fruit.toUpperCase());
+
+// // console.log(upperCaseFruits);
+
+// // Example 3: 
+
+// const names = [
+//     "Maryam",
+//     "John",
+//     "Aisha"
+// ];
+
+// const greetings = names.map(name => `Hello ${name}`);
+
+// console.log(greetings);
+
+// // Assignment 1: Use map() to create a new array called: updatedScores. Each score should be increased by 10.
+
+// const scores = [50, 60, 70, 80];
+
+// const updatedScores = scores.map (score => score + 10) ;
+
+// console.log(updatedScores);
+
+
+// // Assignment 2: Use map() to convert every city to uppercase
+
+// const cities = [
+//     "lagos",
+//     "abuja",
+//     "ibadan"
+// ];
+
+// const upperCaseCities = cities.map(city => city.toUpperCase());
+
+// console.log(upperCaseCities);
+
+// // Assignment 3
+
+// const foods = [
+//     "Rice",
+//     "Beans",
+//     "Yam"
+// ];
+
+// const foodMessages = foods.map(food =>  `I love ${food}`);
+
+// console.log(foodMessages);
+
+// // map() with the index : sometimes you need not only the item, but also its position in the array.
+
+// // array.map((item, index) => {
+//     // use both item and index
+// // });
 
 // const fruits = [
 //     "Apple",
@@ -16,180 +77,269 @@
 //     "Banana"
 // ];
 
-// const upperCaseFruits = fruits.map(fruit => fruit.toUpperCase());
+// const numberedFruits = fruits.map((fruit, index) =>
+//     `${index + 1}. ${fruit}`
+// );
 
-// console.log(upperCaseFruits);
+// console.log(numberedFruits);
 
-// Example 3: 
+// // Assignment 4: 
 
-const names = [
-    "Maryam",
-    "John",
-    "Aisha"
-];
+// // const students = [
+// //     "Maryam",
+// //     "John",
+// //     "Aisha",
+// //     "David"
+// // ];
 
-const greetings = names.map(name => `Hello ${name}`);
+// // const numberedStudents = students.map((student, index) => 
+// //     `Student ${index + 1} : ${student}`
 
-console.log(greetings);
+// // );
 
-// Assignment 1: Use map() to create a new array called: updatedScores. Each score should be increased by 10.
+// // console.log(numberedStudents);
 
-const scores = [50, 60, 70, 80];
+// // Assignment 5: 
 
-const updatedScores = scores.map (score => score + 10) ;
-
-console.log(updatedScores);
-
-
-// Assignment 2: Use map() to convert every city to uppercase
-
-const cities = [
-    "lagos",
-    "abuja",
-    "ibadan"
-];
-
-const upperCaseCities = cities.map(city => city.toUpperCase());
-
-console.log(upperCaseCities);
-
-// Assignment 3
-
-const foods = [
-    "Rice",
-    "Beans",
-    "Yam"
-];
-
-const foodMessages = foods.map(food =>  `I love ${food}`);
-
-console.log(foodMessages);
-
-// map() with the index : sometimes you need not only the item, but also its position in the array.
-
-// array.map((item, index) => {
-    // use both item and index
-// });
-
-const fruits = [
-    "Apple",
-    "Orange",
-    "Banana"
-];
-
-const numberedFruits = fruits.map((fruit, index) =>
-    `${index + 1}. ${fruit}`
-);
-
-console.log(numberedFruits);
-
-// Assignment 4: 
-
-// const students = [
-//     "Maryam",
-//     "John",
-//     "Aisha",
-//     "David"
+// const colors = [
+//     "Red",
+//     "Blue",
+//     "Green"
 // ];
 
-// const numberedStudents = students.map((student, index) => 
-//     `Student ${index + 1} : ${student}`
+// const numberedColors= colors.map((color, index) =>
+//     `Color ${index} ${color}` 
+
+// );  
+
+// console.log(numberedColors);
+
+// // Assignment 6:
+
+// const prices = [2000, 3500, 1500];
+
+// const formattedPrices = prices.map(price => `₦${price}`);
+
+// console.log(formattedPrices);
+
+// // Assignment 7: 
+
+// // const products = [
+// //     "Laptop",
+// //     "Mouse",
+// //     "Keyboard"
+// // ];
+
+// // const numberedProducts = products.map ( (product, index)=>
+// // `Product ${index +1}: ${product}`
+// // );
+
+// // console.log(numberedProducts);
+
+// // Next Level: map() with Objects
+
+// const users = [
+//     {
+//         name: "Maryam",
+//         profession: "Frontend Engineer"
+//     },
+//     {
+//         name: "John",
+//         profession: "Backend Engineer"
+//     },
+//     {
+//         name: "Aisha",
+//         profession: "UI/UX Designer"
+//     }
+// ];
+
+// const userNames = users.map(user => user.name);
+
+// console.log(userNames);
+
+// // Assignment 1: se map() to create a new array containing only the brand names.
+
+// const laptops = [
+//     {
+//         brand: "Apple",
+//         model: "MacBook Pro"
+//     },
+//     {
+//         brand: "Dell",
+//         model: "XPS 15"
+//     },
+//     {
+//         brand: "HP",
+//         model: "Spectre"
+//     }
+// ];
+
+// const brandNames = laptops.map (laptops => laptops.brand);
+
+// console.log(brandNames);
+
+// // Assignment 2: 
+
+// const brandModel = laptops.map ( (laptop =>
+//     `${laptop.brand} - ${laptop.model}`
+// )
 
 // );
 
-// console.log(numberedStudents);
+// console.log(brandModel);
 
-// Assignment 5: 
+// // Assignment 3 (React-style):
 
-const colors = [
-    "Red",
-    "Blue",
-    "Green"
-];
+// const students = [
+//     {
+//         name: "Maryam",
+//         score: 95
+//     },
+//     {
+//         name: "John",
+//         score: 80
+//     },
+//     {
+//         name: "Aisha",
+//         score: 88
+//     }
+// ];
 
-const numberedColors= colors.map((color, index) =>
-    `Color ${index} ${color}` 
+//   const studentScores = students.map( (student =>
+//     `${student.name} scored ${student.score}`
+//   )
 
-);  
+//   );
 
-console.log(numberedColors);
+//   console.log(studentScores)
 
-// Assignment 6:
+// //   Next topic: filter(): The difference is: map() transforms every item into something else. filter() removes items that don't meet a condition.
 
-const prices = [2000, 3500, 1500];
+// // const passedStudents = students.filter(student => student.score >= 50);
 
-const formattedPrices = prices.map(price => `₦${price}`);
+// // const numbers = [1, 2, 3, 4, 5, 6];
 
-console.log(formattedPrices);
+// // const evenNumbers = numbers.filter(number => number % 2 === 0);
 
-// Assignment 7: 
+// // console.log(evenNumbers);
 
-const products = [
-    "Laptop",
-    "Mouse",
-    "Keyboard"
-];
+// // filter() creates a new array containing only the items that pass a condition. It does not modify the original array.
+// // Syntax : 
+// // const newArray = array.filter(item => condition);
 
-const numberedProducts = products.map ( (product, index)=>
-`Product ${index +1}: ${product}`
-);
+// // Example 1:
 
-console.log(numberedProducts);
+// const numbers = [10, 15, 20, 25, 30];
 
-// Next Level: map() with Objects
+// const greaterThan20 = numbers.filter(number => number > 20);
 
-const users = [
-    {
-        name: "Maryam",
-        profession: "Frontend Engineer"
-    },
-    {
-        name: "John",
-        profession: "Backend Engineer"
-    },
-    {
-        name: "Aisha",
-        profession: "UI/UX Designer"
-    }
-];
+// console.log(greaterThan20);
 
-const userNames = users.map(user => user.name);
+// // Example 2:
 
-console.log(userNames);
+// // const fruits = [
+// //     "Apple",
+// //     "Orange",
+// //     "Banana",
+// //     "Mango"
+// // ];
 
-// Assignment 1: se map() to create a new array containing only the brand names.
+// // const longNames = fruits.filter(fruit => fruit.length > 5);
 
-const laptops = [
-    {
-        brand: "Apple",
-        model: "MacBook Pro"
-    },
-    {
-        brand: "Dell",
-        model: "XPS 15"
-    },
-    {
-        brand: "HP",
-        model: "Spectre"
-    }
-];
+// // console.log(longNames);
 
-const brandNames = laptops.map (laptops => laptops.brand);
+// // filter() with objects : Keep only students who passed.
 
-console.log(brandNames);
+// // const students = [
+// //     {
+// //         name: "Maryam",
+// //         score: 95
+// //     },
+// //     {
+// //         name: "John",
+// //         score: 40
+// //     },
+// //     {
+// //         name: "Aisha",
+// //         score: 80
+// //     }
+// // ];
 
-// Assignment 2: 
+// // const passedStudents = students.filter(
+// //     student => student.score >= 50
+// // );
 
-const brandModel = laptops.map ( (laptop =>
-    `${laptop.brand} - ${laptop.model}`
-)
+// // console.log(passedStudents);
 
-);
+// // Assignment 1: Use filter() to keep only ages that are 18 or older.
 
-console.log(brandModel);
+// const ages = [12, 18, 25, 15, 30];
 
-// Assignment 3 (React-style):
+// const newAges = ages.filter( age => age >= 18);
 
+// console.log(newAges);
+
+// // Assignment 2: Keep only countries whose names have more than 6 letters.
+
+// const countries = [
+//     "Nigeria",
+//     "Ghana",
+//     "Canada",
+//     "Kenya"
+// ];
+
+// const longCountries = countries.filter ( country => country.length > 6 );
+
+// console.log(longCountries);
+
+// // Assignment 3: Keep only products costing 100000 or more.
+
+// const products = [
+//     {
+//     name: "Laptop",
+//     price: 500000
+// },
+//     {
+//         name: "Mouse",
+//         price: 5000
+//     },
+//     {
+//         name: "Monitor",
+//         price: 120000
+//     }
+// ];
+
+// const greaterThan100000 = products.filter ( product => product.price >= 100000);
+
+// console.log(greaterThan100000 );
+
+// // Assignment 4: Keep only developers with 3 or more years of experience.
+
+// const developers = [
+//     {
+//         name: "Maryam",
+//         experience: 2
+//     },
+//     {
+//         name: "John",
+//         experience: 5
+//     },
+//     {
+//         name: "Aisha",
+//         experience: 1
+//     },
+//     {
+//         name: "David",
+        experience: 7
+//     }
+// ];
+
+// const newDevelopers = developers.filter (developer => developer.experience >= 3);
+
+// console.log(newDevelopers);
+
+// Method Chaining:
+// Example 1:
 const students = [
     {
         name: "Maryam",
@@ -197,7 +347,7 @@ const students = [
     },
     {
         name: "John",
-        score: 80
+        score: 40
     },
     {
         name: "Aisha",
@@ -205,20 +355,131 @@ const students = [
     }
 ];
 
-  const studentScores = students.map( (student =>
-    `${student.name} scored ${student.score}`
-  )
+const passedNames = students
+    .filter(student => student.score >= 50)
+    .map(student => student.name);
 
-  );
+console.log(passedNames);
 
-  console.log(studentScores)
+// Example 2
 
-//   Next topic: filter(): The difference is: map() transforms every item into something else. filter() removes items that don't meet a condition.
+const products = [
+    {
+        name: "Laptop",
+        price: 500000
+    },
+    {
+        name: "Mouse",
+        price: 5000
+    },
+    {
+        name: "Monitor",
+        price: 120000
+    }
+];
 
-const passedStudents = students.filter(student => student.score >= 50);
+const expensiveProducts = products
+    .filter(product => product.price >= 100000)
+    .map(product => product.name);
 
-const numbers = [1, 2, 3, 4, 5, 6];
+console.log(expensiveProducts);
 
-const evenNumbers = numbers.filter(number => number % 2 === 0);
+// Assignment 1: eturn only the names of developers with 3 or more years of experience.
 
-console.log(evenNumbers);
+const developers = [
+    {
+        name: "Maryam",
+        experience: 2
+    },
+    {
+        name: "John",
+        experience: 5
+    },
+    {
+        name: "Aisha",
+        experience: 1
+    },
+    {
+        name: "David",
+        experience: 7
+    }
+];
+
+const newDevelopers = developers
+       .filter(developer => developer.experience >=3)
+       .map(developer => developer.name);
+
+       console.log(newDevelopers);
+
+    //    🏆 Assignment 2: Keep only employees earning 100000 or more.
+
+    const employees = [
+    {
+        name: "Sarah",
+        salary: 200000
+    },
+    {
+        name: "James",
+        salary: 80000
+    },
+    {
+        name: "Grace",
+        salary: 300000
+    }
+];
+
+const newEmployees = employees
+     .filter(employee => employee.salary >= 100000)
+     .map(employee => employee.name);
+
+     console.log(newEmployees);
+
+    //  🏆 Assignment 3: Keep only products whose quantity is 2 or more. Return only the product names.
+
+    const cart = [
+    {
+        product: "Phone",
+        quantity: 2
+    },
+    {
+        product: "Laptop",
+        quantity: 1
+    },
+    {
+        product: "Mouse",
+        quantity: 4
+    }
+];
+
+const newCart = cart
+      .filter(item => item.quantity >= 2)
+      .map(item => item.product);
+
+      console.log(newCart);
+
+    //   Assignment 4: Return only the names of active users.
+
+    const users = [
+    {
+        name: "Maryam",
+        active: true
+    },
+    {
+        name: "John",
+        active: false
+    },
+    {
+        name: "Aisha",
+        active: true
+    },
+    {
+        name: "David",
+        active: false
+    }
+];
+
+const activeUsers = users
+      .filter( user=> user.active)
+      .map(user => user.name);
+
+      console.log(activeUsers);

@@ -19,6 +19,53 @@ Old way of declaring variables.
 Avoid using var in modern JavaScript.
 
 
+# Objects
+
+An object is a collection of related data stored as key-value pairs.
+
+Example:
+
+```javascript
+const user = {
+    name: "Maryam",
+    age: 30
+};
+```
+
+## Accessing Properties
+
+### Dot notation
+
+```javascript
+user.name
+```
+
+### Bracket notation
+
+```javascript
+user["name"]
+```
+
+Use bracket notation when the property name comes from a variable.
+
+## Updating
+
+```javascript
+user.age = 31;
+```
+
+## Adding
+
+```javascript
+user.country = "Nigeria";
+```
+
+## Deleting
+
+```javascript
+delete user.country;
+```
+
 # JavaScript Arrays
 
 ## What is an Array?
@@ -283,3 +330,43 @@ Spread:
 Rest:
 - Collects remaining values.
 - Example: `const [first, ...others] = array`
+
+## Nested Objects
+
+A nested object is an object inside another object.
+
+Example:
+
+```javascript
+const user = {
+    name: "Maryam",
+    address: {
+        country: "Nigeria",
+        city: "Lagos"
+    }
+};
+```
+
+### Access nested properties
+
+```javascript
+user.address.country
+```
+
+### Update
+
+```javascript
+user.address.city = "Abuja";
+```
+
+### Add
+
+```javascript
+user.address.street = "Broad Street";
+```
+
+### Delete
+
+```javascript
+delete user.address.country;
+```

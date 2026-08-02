@@ -227,3 +227,22 @@ Common combinations:
 - filter() + map()
 - map() + filter()
 - filter() + map() + reduce()
+
+## reduce()
+
+- reduce() combines all items in an array into one final value.
+- It returns a single value (number, string, object, or array).
+- It does not modify the original array.
+
+Syntax:
+
+const result = array.reduce((accumulator, currentValue) => {
+  return updatedAccumulator;
+}, initialValue);
+
+Common initial values:
+- 0 → Sum numbers
+- 1 → Multiply numbers
+- [] → Build a new array
+- {} → Build an object
+- "" → Build a string

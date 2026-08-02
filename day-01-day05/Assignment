@@ -1,0 +1,13 @@
+Your Day 1 Assignment
+Create variables for your name, age, profession, and country.
+Create an array of your five favorite technologies.
+Create an object representing yourself with properties like name, role, skills, and location.
+Practice object and array destructuring.
+Use the spread operator to add a new skill to your skills array.
+Use map() to convert an array of prices from naira to kobo (multiply by 100).
+Use filter() to return only prices greater than 5,000.
+Use reduce() to calculate the total price of all items.
+Fetch users from https://jsonplaceholder.typicode.com/users and display their names in the console using async/await.
+Your Day 2 Mini Project
+
+Build a Task Manager using HTML, CSS, and JavaScript (no React yet).

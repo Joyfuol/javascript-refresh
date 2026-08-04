@@ -122,7 +122,7 @@ laptops.forEach(laptop =>{
     console.log( ` ${laptop.brand} - ${laptop.model}`)
 });
 
-// Assignment 5: Without using map(), use only forEach() to create this array: "HELLO MARYAM", "HELLO JOHN", "HELLO AISHA"
+// Assignment 5: Without using map(), use only forEach() to create this array: "HELLO MARYAM", "HELLO JOHN", "HELLO AISHA" Create an empty array. Loop through names with forEach(). Add each transformed value to the new array using .push().
 
 const names = [
     "Maryam",
@@ -130,8 +130,10 @@ const names = [
     "Aisha"
 ];
 
+const greetings = [];
 
+names.forEach(name => {
+    greetings.push(`HELLO ${name.toUpperCase()}`);
+});
 
-names.forEach( name =>{
-    console.log( ` HELLO ${name.toUpperCase() }`)
-})
+console.log(greetings);

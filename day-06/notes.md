@@ -246,3 +246,22 @@ Common initial values:
 - [] → Build a new array
 - {} → Build an object
 - "" → Build a string
+
+## forEach()
+
+- Loops through every item in an array.
+- Performs an action on each item.
+- Does NOT return a new array.
+- Returns `undefined`.
+- Commonly used for:
+  - Printing values
+  - Logging data
+  - Updating existing data
+  - Calling functions for each item
+
+### Syntax
+
+```javascript
+array.forEach((item, index) => {
+    // do something
+});

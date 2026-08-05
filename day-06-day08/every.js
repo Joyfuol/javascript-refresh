@@ -134,3 +134,5 @@ const users = [
 const user = users.every(user => user.id >0);
 
 console.log(user);
+
+

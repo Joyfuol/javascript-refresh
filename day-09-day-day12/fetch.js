@@ -190,8 +190,8 @@ async function getUsers() {
         }
 
         const users = await response.json();
-        const usernames = users.map(user => `${user.name} - ${user.email}`);
-        console.log(usernames)
+        const userInfo = users.map(user => `${user.name} - ${user.email}`);
+        console.log(userInfo)
     } catch(error) {
         console.log(error.message);
     }
